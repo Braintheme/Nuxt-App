@@ -10,8 +10,7 @@
   text-align: center;
   @include flex-center-center;
   flex-direction: column;
-
-  // flex: none;
+  
   .feature-icon {
     background-color: color('primary-yellow');
     @include sizes(65px);

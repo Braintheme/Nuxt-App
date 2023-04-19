@@ -9,23 +9,32 @@
 
 	<Teleport to="body">
 
-		<Transition>
-			<Modal :classes="`modal-entry`" v-if="showModalEntry" @close-modal="showModalEntry = !showModalEntry">
+		<Transition name="fade">
+			<Modal 
+				:classes="`modal-entry`" 
+				v-if="showModalEntry" 
+				@close-modal="
+				showModalEntry = !showModalEntry"
+			>
 				<template v-slot:content>
 					<ModalEntry />
 				</template>
 			</Modal>
 		</Transition>
 
-		<Transition>
-			<Modal :classes="`modal-registration`" v-if="showModalRegistration"
-				@close-modal="showModalRegistration = !showModalRegistration">
+		<Transition name="fade">
+			<Modal 
+				:classes="`modal-registration`" 
+				v-if="showModalRegistration" 
+				@close-modal="
+				showModalRegistration = !showModalRegistration"
+			>
 				<template v-slot:content>
 					<ModalRegistration />
 				</template>
 			</Modal>
 		</Transition>
-
+		
 	</Teleport>
 </template>
 

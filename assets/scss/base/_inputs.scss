@@ -186,10 +186,6 @@ input[type='text'] {
     @include sizes(25px)
   }
 
-  [type=radio]:checked+img {
-
-  }
-
   label {
     margin-bottom: 0;
     @include sizes(45px);
