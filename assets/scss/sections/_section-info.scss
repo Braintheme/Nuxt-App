@@ -1,0 +1,7 @@
+.section-info {
+  padding-top: 0;
+  @include mq('medium') {
+    order: 1;
+    padding-bottom: 40px;
+  }
+}

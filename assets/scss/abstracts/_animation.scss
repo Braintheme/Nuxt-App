@@ -1,0 +1,31 @@
+@keyframes shapeAnimationIn {
+  0% {
+    transform: matrix(1,0,0,1,0,0)
+  }
+ 
+  100% {
+    transform: matrix(1,0,0,1,-47.8038,-27.7961)
+  }
+}
+
+@keyframes shapeAnimationOut {
+  0% {
+    transform: matrix(1,0,0,1,-47.8038,-27.7961)
+  }
+ 
+  100% {
+    transform: matrix(1,0,0,1,0,0)
+  }
+}
+
+@keyframes shapeAnimationOutIn {
+  0% {
+    transform: matrix(1,0,0,1,-47.8038,-27.7961)
+  }
+  50% {
+    transform: matrix(1,0,0,1,0,0)
+  }
+  100% {
+    transform: matrix(1,0,0,1,-47.8038,-27.7961)
+  }
+}

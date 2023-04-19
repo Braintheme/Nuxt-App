@@ -1,0 +1,23 @@
+.shape-gradient {
+  position: absolute;
+  top: 0;
+  right: -5%;
+  width: 525px;
+  height: 485px;
+  transform-origin: 0 0;
+  z-index: -1;
+  filter: blur(100px);
+  overflow: visible;
+  &-1 {
+    fill: #FF7A00;
+    animation: shapeAnimationIn 3s linear infinite alternate;
+  }
+  &-2 {
+    fill: #FF29A8;
+    animation: shapeAnimationOutIn 2s linear infinite alternate;
+  }
+  &-3 {
+    fill: #FFD481;
+    animation: shapeAnimationOut 3s linear infinite alternate;
+  }
+}

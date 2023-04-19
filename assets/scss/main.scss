@@ -1,0 +1,36 @@
+/* Abstracts */
+@import 'abstracts/_variables',
+'abstracts/_mixins',
+'abstracts/_functions',
+'abstracts/_fonts',
+'abstracts/_animation';
+
+/* Base */
+@import 'base/_typography',
+'base/_framework',
+'base/_inputs';
+
+/* Components */
+@import 'components/_header',
+'components/modal/_modal',
+'components/swiper/_swiper-customization';
+
+/* Elements */
+@import 'elements/_buttons',
+'elements/_shape-gradient';
+
+/* Blocks */
+@import 'blocks/_block-info',
+'blocks/_heading', 
+'blocks/_features';
+
+/* Layouts */
+@import 'layouts/_home';
+
+/* Sections */
+@import 'sections/_section',
+'sections/_section-info',
+'sections/_section-features';
+
+/* Nuxt Helpers */
+@import 'assets/scss/nuxt/_transitions'

@@ -1,0 +1,93 @@
+/* BODY
+-------------------------------------------- */
+body {
+    min-height: 100%;
+    // min-width: 320px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    color: color('gray-400');
+    background-color: color('gray-800');
+    position: relative;
+    @if $smooth_font {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+} 
+
+* {
+    box-sizing: border-box;
+}
+
+::selection {
+    color: color('gray-800');
+    background: color('primary-yellow');
+}
+
+/* IMAGE
+-------------------------------------------- */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* HEADINGS
+-------------------------------------------- */
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Gilroy';
+    font-weight: 700;
+    color: color('gray-200');
+}
+
+h1 {
+    font-size: px2rem(64px);
+    line-height: px2rem(64px);
+}
+
+h2 {
+    font-size: px2rem(48px);
+    line-height: px2rem(56px);
+}
+
+h3 {
+    font-size: px2rem(40px);
+    line-height: px2rem(48px);
+}
+
+h4 {
+    font-size: px2rem(32px);
+    line-height: px2rem(40px);
+}
+
+h5 {
+    font-size: px2rem(25px);
+    line-height: px2rem(30px);
+}
+
+h6 {
+    font-size: px2rem(16px);
+    line-height: px2rem(24px);
+}
+
+/* PARAGRAPH
+-------------------------------------------- */
+
+p {
+    margin: 0 0 px2rem(15px);
+
+    &:empty {
+        display: none;
+    }
+}
+
+/* ICON SVG
+-------------------------------------------- */
+svg.icon {
+    fill: currentColor;
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+}

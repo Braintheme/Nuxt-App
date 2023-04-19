@@ -1,0 +1,21 @@
+.section-features {
+  .heading {
+    margin-bottom: 75px;
+
+    .title {
+      margin: 0;
+    }
+  }
+  @include mq('medium') {
+    padding-top: 0;
+
+    .heading {
+      margin-bottom: 35px;
+      padding-top: 0;
+
+      .title {
+        font-size: px2rem(25px);
+      }
+    }
+  }
+}

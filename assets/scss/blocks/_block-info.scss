@@ -1,0 +1,45 @@
+.info-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(color('gray-700'), 0.5);
+  border-radius: 24px;
+  text-align: center;
+
+  background-image: url('assets/img/icons/graphs.svg'), url('assets/img/icons/stars.svg');
+  background-repeat: no-repeat;
+  background-size: contain, auto;
+  background-position: center center, 50% calc(100% - 40px);
+
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 44px 75px 44px;
+
+  @include mq('medium') {
+    padding: 25px 25px 60px 25px;
+    background-position: center center, 50% calc(100% - 25px);
+  }
+  > .heading {
+    margin-bottom: 28px;
+    > * {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .title {
+    @include mq('medium') {
+      font-size: px2rem(25px);
+      line-height: px2rem(25px);
+    }
+  }
+  p {
+    color: color('gray-500');
+    font-size: px2rem(14px);
+    line-height: px2rem(24px);
+    margin-bottom: 0;
+  }
+}

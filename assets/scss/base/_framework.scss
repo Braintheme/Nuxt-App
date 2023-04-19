@@ -1,0 +1,9 @@
+.wrapper {
+  width: 100%;
+  max-width: $wrapper;
+  margin: 0 auto;
+  @include mq('large') {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

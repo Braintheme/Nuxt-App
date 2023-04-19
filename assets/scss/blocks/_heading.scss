@@ -1,0 +1,26 @@
+.heading {
+  text-align: center;
+  &-icons {
+    display: flex;
+    align-items: center;
+    > .icon {
+      max-width: 35px;
+      height: 100%;
+      &:first-child {
+        margin-right: 25px;
+      }
+      &:last-child {
+        margin-left: 25px;
+      }
+      @include mq('medium') {
+        max-width: 20px;
+        &:first-child {
+          margin-right: 10px;
+        }
+        &:last-child {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

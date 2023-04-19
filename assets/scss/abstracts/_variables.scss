@@ -1,0 +1,40 @@
+$transition: cubic-bezier(0.46, 0.03, 0.52, 0.96);
+
+$header_height: (
+    'large': 93px,
+    'medium': 60px
+);
+
+$wrapper: 1200px;
+
+$colors: (
+    'primary-yellow':#FFC737,
+    'primary-blue':#3772FF,
+    'primary-pink':#9757D7,
+    'primary-orange':#FF6838,
+    'primary-green':#58BD7D,
+
+    'second-green':#FFD166,
+    'second-blue':#4BC9F0,
+    'second-200':#E4D7CF,
+    'second-100':#CDB4DB,
+
+    'gray-800': #141416,
+    'gray-700': #23262F,
+    'gray-600': #353945,
+    'gray-500': #777E91,
+    'gray-400': #B1B5C4,
+    'gray-300': #E6E8EC,
+    'gray-200': #F4F5F6,
+    'gray-100': #FCFCFD,
+);
+
+$smooth_font: true;
+
+// BREAKPOINTS
+$breakpoints: (
+    'small': 576px,
+    'medium': 768px,
+    'large': 992px,
+    'xlarge': 1200px
+);

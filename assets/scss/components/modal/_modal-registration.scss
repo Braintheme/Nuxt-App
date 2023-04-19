@@ -1,0 +1,147 @@
+.modal-registration {
+  max-width: 770px;
+  width: 100%;
+  margin: 0 auto;
+  vertical-align: middle;
+  border-radius: 25px;
+
+  .title {
+    flex-direction: column;
+
+    .title-icon {
+      background-color: color('primary-green');
+    }
+  }
+
+  .modal-registration-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    overflow: hidden;
+  }
+
+  .modal-registration-content {
+    height: 100%;
+  }
+
+  .modal-registration-column {
+    flex: 1 0 0%;
+    overflow: hidden;
+
+    &.left {
+      .modal-registration-content {
+        position: relative;
+        background-color: color('primary-green');
+        background-image: url('assets/img/icons/graphs-2.svg'), url('assets/img/icons/lines.svg');
+        background-repeat: no-repeat;
+        background-size: contain, auto;
+        background-position: center top, 50% 100%;
+        padding: 65px 53px 53px 53px;
+      }
+
+      .registration-title {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: px2rem(25px);
+        line-height: px2rem(40px);
+        text-align: left;
+        color: color('gray-100');
+        margin-bottom: 67px;
+      }
+
+      .swiper-custom .swiper-custom-controls {
+        margin-top: 75px;
+      }
+    }
+
+    &.right {
+      .modal-registration-content {
+        background-color: rgba(color('gray-700'), 0.95);
+        padding: 60px 45px 45px 45px;
+      }
+    }
+  }
+
+  .input-contact-way {
+    padding: 15px 0;
+
+    label {
+      text-align: center;
+    }
+
+    .input-group {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .input-wrap-radio {
+      margin-right: 10px;
+    }
+  }
+}
+
+
+@include mq('medium') {
+  .modal-registration {
+    max-width: 355px;
+
+    .title {
+      flex-direction: row;
+    }
+
+    .modal-registration-column {
+      &.right {
+        .modal-registration-content {
+          padding: 25px 30px;
+        }
+      }
+    }
+  }
+}
+
+.reg-info {
+  display: flex;
+  gap: 25px;
+
+  .reg-info-icon {
+    background: rgba(255, 255, 255, 0.2);
+    @include sizes(45px);
+    @include flex-center-center;
+    border-radius: 50%;
+
+    svg.icon {
+      fill: none;
+      stroke: color('gray-100');
+    }
+  }
+
+  .reg-info-title,
+  .reg-info-subtitle {
+    color: color('gray-100');
+  }
+
+  .reg-info-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  } 
+  .reg-info-title {
+    font-family: 'Gilroy';
+    font-weight: 700;
+
+    font-size: px2rem(14px);
+    line-height: px2rem(16px);
+  }
+
+  .reg-info-subtitle {
+    font-size: px2rem(14px);
+    line-height: px2rem(24px);
+  }
+}
+
+.reg-info-items {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}

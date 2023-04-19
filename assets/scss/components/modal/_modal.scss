@@ -1,0 +1,90 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: rgba(color('gray-600'), 0.9);
+}
+
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden auto;
+  @include mq('small') {
+    justify-content: end;
+    > .modal-content {
+      margin-bottom: 10px;
+    }
+  }
+
+  .title {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: px2rem(25px);
+    line-height: px2rem(25px);
+
+    color: color('gray-100');
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+
+    .title-icon {
+      @include sizes(45px);
+      @include flex-center-center;
+      border-radius: 15px;
+      background-color: color('primary-orange');
+      svg.icon {
+        fill: color('gray-100');
+      }
+    }
+  }
+
+  .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: color('gray-600');
+    border-radius: 50%;
+    @include flex-center-center;
+    @include sizes(40px);
+    cursor: pointer;
+
+    .icon {
+      fill: color('gray-500');
+      @include sizes(14px);
+    }
+  }
+}
+
+.modal-content {
+  position: relative;
+  z-index: 1045;
+}
+
+.modal-entry {
+  background-color: rgba(color('gray-700'), 0.95);
+  border-radius: 25px;
+  max-width: 355px;
+  margin: 0 auto;
+  padding: 25px;
+  vertical-align: middle;
+}
+
+@media only screen and (max-height : 430px){
+  .modal {
+    justify-content: unset;
+  }
+}
+
+@import '_modal-entry', 
+'_modal-registration';

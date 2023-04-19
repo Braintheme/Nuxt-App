@@ -1,0 +1,44 @@
+.home-page {
+  padding-top: calc(map-get($header_height, 'large') + 100px);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+
+  .shape-gradient {
+    &.first {
+      right: -400px;
+      top: 250px;
+    }
+
+    &.second {
+      opacity: 0.3;
+      right: auto;
+      top: auto;
+      left: -200px;
+      bottom: -240px;
+      transform: scale(0.7);
+      transform-origin: center center;
+    }
+  }
+
+  @include mq('medium') {
+    padding-top: calc(map-get($header_height, 'medium') + 50px);
+
+    .shape-gradient {
+
+      &.first {
+        transform: scale(0.7);
+        transform-origin: top;
+        right: -450px;
+      }
+
+      &.second {
+        transform: scale(0.4);
+        transform-origin: top;
+        bottom: -3%;
+        left: -250px;
+      }
+    }
+  }
+}
