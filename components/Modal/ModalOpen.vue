@@ -52,7 +52,6 @@ export default {
   },
   methods: {
     openModal(modalType) {
-      console.log(modalType);
       switch (modalType) {
         case "entry":
           this.stateModals.showModalEntry = true;
