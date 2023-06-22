@@ -5,6 +5,14 @@
 		<section class="section-info">
 			<div class="wrapper">
 				<div class="info-block">
+					<BabylonScene />
+				</div>
+			</div>
+		</section>
+		
+		<section class="section-info">
+			<div class="wrapper">
+				<div class="info-block">
 					<div class="heading heading-icons">
 						<img src="~assets/images/hand-right.png" class="icon" alt="icon">
 						<h3 class="title">Володарі Трафіку</h3>
