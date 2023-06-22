@@ -45,7 +45,7 @@ const createScene = (canvas) => {
 	const scene = new Scene(engine);
 	// const camera = new FreeCamera("camera1", new Vector3(0, 5, -10), scene);
 	const camera = new ArcRotateCamera("Camera", 0.1398812670441306, 1.1040610890616789, 0.694160393391321, new Vector3(0.019400767982006073, 0.9397223591804504, -0.07945270836353302), scene);
-	camera.setPosition(new Vector3(0, 10, -80));
+	camera.setPosition(new Vector3(0, 0, 0));
     camera.attachControl(canvas, true);
     camera.minZ = 0.1;
 	scene.clearColor = new Color4(0, 0, 0, 0);
