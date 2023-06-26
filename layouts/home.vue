@@ -4,7 +4,7 @@
 
 		<section class="section-info">
 			<div class="wrapper">
-				<div class="info-block">
+				<div class="info-block" style="padding: 0;">
 					<BabylonScene />
 				</div>
 			</div>

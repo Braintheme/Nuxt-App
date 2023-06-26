@@ -1,6 +1,15 @@
 <template>
-    <canvas ref="bjsCanvas" width="600" height="600" />
+    <canvas id="canvasScene" ref="bjsCanvas" width="600" height="600" />
 </template>
+
+<style>
+
+#canvasScene {
+    width: 100%;
+    height: 50vh;
+}
+
+</style>
   
 <script>
 import { ref, onMounted } from "@vue/runtime-core";
